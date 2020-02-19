@@ -18,6 +18,7 @@ func distance(fromX x1: Double, fromY y1: Double, toX x2: Double, toY y2: Double
 // NOTE: We are finding the distance between the points (3, 0) and (0, 4) on a Cartesian plane
 distance(fromX: 3, fromY: 0, toX: 0, toY: 4)
 
+print(distance(fromX: 2, fromY: 3, toX: 4, toY: 2))
 /*:
  A structure could be used to tie together the x and y values of a point on a Cartesian plane.
  

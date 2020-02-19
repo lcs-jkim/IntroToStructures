@@ -33,6 +33,20 @@ import Foundation
  */
 // Begin your work here...
 
+struct triangle {
+    
+    // Mark properties
+    var length: Double
+    var width: Double
+    var height: Double
+    
+    // using properties for area
+    var area: Double {
+        
+        return 0.5(length * width)
+    }
+    
+}
 
 
 /*:
