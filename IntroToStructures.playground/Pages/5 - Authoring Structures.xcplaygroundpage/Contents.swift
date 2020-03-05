@@ -63,7 +63,7 @@ struct triangle {
 }
 
 // Test case #1 - length: 4, width: 3, height: 2 and print description
-// Result: The area of the triangle is 4 square units and its perimeter is 9 units
+// Result: The area of the triangle is 4.0 square units and its perimeter is 9.0 units
 let triangle1 = triangle(base: 4, height: 2, side1: 2, side2: 3)
 
 print(triangle1.Description)
@@ -91,12 +91,17 @@ struct rectangle {
     // makes a description with the area and perimeter
     var description1: String {
         
-        return "The area of the rectangle is " + String(format: "&.1f", area) + " square units and " + String(format: "%.1f", perimeter) + " units "
+        return "The area of the rectangle is " + String(format: "&.1f", area1) + " square units and " + String(format: "%.1f", perimeter1) + " units "
     }
     
 }
 
-// Test case #1 - length: 3, len
+// Test case #1 - length: 3, width: 2
+// Result: area is 6.0
+
+let rectangle1 = rectangle(length: 3, width: 2)
+
+print(rectangle1.area1)
 
 
 /*:
