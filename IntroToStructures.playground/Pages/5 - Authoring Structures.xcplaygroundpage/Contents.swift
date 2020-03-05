@@ -44,6 +44,7 @@ struct triangle {
     var area: Double {
         
         return (1/2)*(length * width)
+        
     }
     
     // another one for perimeter
@@ -60,6 +61,10 @@ struct triangle {
     }
 }
 
+// Test case #1 - length: 4, width: 3, height: 2 and print description
+let triangle1 = triangle(length: 4, width: 3, height: 2)
+
+print(triangle1.Description)
 
 
 /*:
