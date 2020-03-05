@@ -36,21 +36,22 @@ import Foundation
 struct triangle {
     
     // Mark properties
-    var length: Double
-    var width: Double
+    var base: Double
     var height: Double
+    var side1: Double
+    var side2: Double
     
     // using properties for area
     var area: Double {
         
-        return (1/2)*(length * width)
+        return (1/2)*(base * height)
         
     }
     
     // another one for perimeter
     var perimeter: Double {
         
-        return 2*length + 2*width
+        return base + side1 + side2
         
     }
     
@@ -62,7 +63,8 @@ struct triangle {
 }
 
 // Test case #1 - length: 4, width: 3, height: 2 and print description
-let triangle1 = triangle(length: 4, width: 3, height: 2)
+// Result: The area of the triangle is 4 square units and
+let triangle1 = triangle(base: 4, height: 2)
 
 print(triangle1.Description)
 
@@ -94,6 +96,7 @@ struct rectangle {
     
 }
 
+// Test case #1 - length: 3, len
 
 
 /*:
