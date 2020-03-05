@@ -43,10 +43,23 @@ struct triangle {
     // using properties for area
     var area: Double {
         
-        return 0.5(length * width)
+        return (1/2)*(length * width)
     }
     
+    // another one for perimeter
+    var perimeter: Double {
+        
+        return 2*length + 2*width
+        
+    }
+    
+    // prints description
+    var Description: String {
+        
+        return "The area of the triangle is " + String(format: "%.1f", area) + " square units and " + String(format: "%.1f", perimeter) + " units"
+    }
 }
+
 
 
 /*:
