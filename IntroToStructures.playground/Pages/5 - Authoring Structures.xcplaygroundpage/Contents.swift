@@ -58,13 +58,13 @@ struct triangle {
     // fills description with the area and the perimeter
     var Description: String {
         
-        return "The area of the triangle is " + String(format: "%.1f", area) + " square units and " + String(format: "%.1f", perimeter) + " units"
+        return "The area of the triangle is " + String(format: "%.1f", area) + " square units and its perimeter is " + String(format: "%.1f", perimeter) + " units"
     }
 }
 
 // Test case #1 - length: 4, width: 3, height: 2 and print description
-// Result: The area of the triangle is 4 square units and
-let triangle1 = triangle(base: 4, height: 2)
+// Result: The area of the triangle is 4 square units and its perimeter is 9 units
+let triangle1 = triangle(base: 4, height: 2, side1: 2, side2: 3)
 
 print(triangle1.Description)
 
