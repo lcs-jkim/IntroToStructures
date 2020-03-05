@@ -103,7 +103,12 @@ let rectangle1 = rectangle(length: 3, width: 2)
 
 print(rectangle1.area1)
 
+// Test case #2 - length: 4, width: 2
+// Result: perimeter is 12.0 units
 
+let rectangle2 = rectangle(length: 4, width: 2)
+
+print(rectangle2.perimeter1)
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
  */
