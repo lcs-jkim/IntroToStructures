@@ -54,7 +54,7 @@ struct triangle {
         
     }
     
-    // prints description
+    // fills description with the area and the perimeter
     var Description: String {
         
         return "The area of the triangle is " + String(format: "%.1f", area) + " square units and " + String(format: "%.1f", perimeter) + " units"
@@ -65,6 +65,35 @@ struct triangle {
 let triangle1 = triangle(length: 4, width: 3, height: 2)
 
 print(triangle1.Description)
+
+// Structure for rectangle
+
+struct rectangle {
+    
+    // Mark Properties
+    var length: Double
+    var width: Double
+    
+    // Use properties to find area
+    var area1: Double {
+        
+        return length * width
+    }
+    
+    // Use again for perimeter
+    var perimeter1: Double {
+        
+        return 2 * length + 2 * width
+    }
+    
+    // makes a description with the area and perimeter
+    var description1: String {
+        
+        return "The area of the rectangle is " + String(format: "&.1f", area) + " square units and " + String(format: "%.1f", perimeter) + " units "
+    }
+    
+}
+
 
 
 /*:
