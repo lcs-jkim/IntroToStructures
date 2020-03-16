@@ -121,6 +121,47 @@ let rectangle3 = rectangle(length: 4, width: 2)
 
 print(rectangle3.description)
 
+
+// Structure for cone
+
+struct cone {
+    
+    // Mark Properties
+    var radius: Double
+    var height: Double
+    var sideLength: Double
+    
+    // Use properties to find surface area
+    
+    var areaBase: Double {
+        
+        return Double.pi * pow(radius, 2)
+    }
+    
+    var lateralSurface: Double {
+        
+        return Double.pi * radius * sideLength
+    }
+    
+    var totalSurfaceArea: Double {
+        
+        return lateralSurface + areaBase
+    }
+   
+    var volume: Double {
+        
+        return (Double.pi * pow(radius, 2) * height)/3
+    }
+    
+    var description: String {
+        
+        return "The surface area of the cone is " + String(format: "&.1f", totalSurfaceArea) + " square units and its volume is " + String(format: "&.1f", volume)
+    }
+    
+}
+
+
+
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
  */
