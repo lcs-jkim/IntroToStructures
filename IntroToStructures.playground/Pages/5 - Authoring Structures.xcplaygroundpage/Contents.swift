@@ -99,9 +99,9 @@ struct rectangle {
     }
     
     // makes a description with the area and perimeter
-    var description1: String {
+    var description: String {
         
-        return "The area of the rectangle is " + String(format: "&.1f", area) + " square units and " + String(format: "%.1f", perimeter) + " units "
+        return "The area of the rectangle is " + String(format: "&.1f", area) + " square units and its perimeter is " + String(format: "%.1f", perimeter) + " units "
     }
     
 }
@@ -116,7 +116,10 @@ let rectangle2 = rectangle(length: 4, width: 2)
 
 print(rectangle2.perimeter)
 
-// Test case #3 - lenght: 4, width: 2, result: "The area of the rectangle is
+// Test case #3 - lenght: 4, width: 2, result: "The area of the rectangle is 8.0 square units and its perimeter is 12.0 units
+let rectangle3 = rectangle(length: 4, width: 2)
+
+print(rectangle3.description)
 
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
