@@ -68,12 +68,12 @@ let triangle1 = triangle(base: 4, height: 2, side1: 2, side2: 3)
 
 print(triangle1.Description)
 
-// Test case #2 - base: 5, height: 2, side1: 3, side2: 2, result: 10
+// Test case #2 - base: 5, height: 2, side1: 3, side2: 2, result: 10.0
 let triangle2 = triangle(base: 5, height: 2, side1: 3, side2: 2)
 
 print(triangle2.perimeter)
 
-// Test case #3 - base: 5, height: 2, side1: 3, side2: 2, result: 5
+// Test case #3 - base: 5, height: 2, side1: 3, side2: 2, result: 5.0
 let triangle3 = triangle(base: 5, height: 2, side1: 3, side2: 2)
 print(triangle3.area
 )
@@ -87,13 +87,13 @@ struct rectangle {
     var width: Double
     
     // Use properties to find area
-    var area1: Double {
+    var area: Double {
         
         return length * width
     }
     
     // Use again for perimeter
-    var perimeter1: Double {
+    var perimeter: Double {
         
         return 2 * length + 2 * width
     }
@@ -101,24 +101,23 @@ struct rectangle {
     // makes a description with the area and perimeter
     var description1: String {
         
-        return "The area of the rectangle is " + String(format: "&.1f", area1) + " square units and " + String(format: "%.1f", perimeter1) + " units "
+        return "The area of the rectangle is " + String(format: "&.1f", area) + " square units and " + String(format: "%.1f", perimeter) + " units "
     }
     
 }
 
-// Test case #1 - length: 3, width: 2
-// Result: area is 6.0
-
+// Test case #1 - length: 3, width: 2, result: 6.0
 let rectangle1 = rectangle(length: 3, width: 2)
 
-print(rectangle1.area1)
+print(rectangle1.area)
 
-// Test case #2 - length: 4, width: 2
-// Result: perimeter is 12.0 units
-
+// Test case #2 - length: 4, width: 2, result: 12.0
 let rectangle2 = rectangle(length: 4, width: 2)
 
-print(rectangle2.perimeter1)
+print(rectangle2.perimeter)
+
+// Test case #3 - lenght: 4, width: 2, result: "The area of the rectangle is
+
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
  */
