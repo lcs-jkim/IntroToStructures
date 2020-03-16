@@ -68,6 +68,16 @@ let triangle1 = triangle(base: 4, height: 2, side1: 2, side2: 3)
 
 print(triangle1.Description)
 
+// Test case #2 - base: 5, height: 2, side1: 3, side2: 2, result: 10
+let triangle2 = triangle(base: 5, height: 2, side1: 3, side2: 2)
+
+print(triangle2.perimeter)
+
+// Test case #3 - base: 5, height: 2, side1: 3, side2: 2, result: 5
+let triangle3 = triangle(base: 5, height: 2, side1: 3, side2: 2)
+print(triangle3.area
+)
+
 // Structure for rectangle
 
 struct rectangle {
