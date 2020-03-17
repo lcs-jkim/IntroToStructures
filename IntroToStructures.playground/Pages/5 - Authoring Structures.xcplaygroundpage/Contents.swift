@@ -133,19 +133,12 @@ struct cone {
     
     // Use properties to find surface area
     
-    var areaBase: Double {
-        
-        return Double.pi * pow(radius, 2)
-    }
-    
-    var lateralSurface: Double {
-        
-        return Double.pi * radius * sideLength
-    }
-    
     var totalSurfaceArea: Double {
         
-        return lateralSurface + areaBase
+        let surfaceArea = (Double.pi * pow(radius, 2)) + (Double.pi * radius * sideLength)
+        
+        return surfaceArea.rounded()
+    
     }
    
     var volume: Double {
@@ -160,7 +153,11 @@ struct cone {
     
 }
 
+// Test case #1 - radius: 3, height: 2, sideLength: 5, result: 75
 
+let cone1 = cone(radius: 3, height: 2, sideLength: 5)
+
+print(cone1.totalSurfaceArea)
 
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
