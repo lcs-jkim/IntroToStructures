@@ -143,21 +143,35 @@ struct cone {
    
     var volume: Double {
         
-        return (Double.pi * pow(radius, 2) * height)/3
+        let unroundedVolume = (Double.pi * pow(radius, 2) * height)/3
+        
+        return unroundedVolume.rounded()
     }
     
     var description: String {
         
-        return "The surface area of the cone is " + String(format: "&.1f", totalSurfaceArea) + " square units and its volume is " + String(format: "&.1f", volume)
+        return "The surface area of the cone is \(totalSurfaceArea) square units and its volume is \(volume) cubic units"
     }
     
 }
 
-// Test case #1 - radius: 3, height: 2, sideLength: 5, result: 75
+// Test case #1 - radius: 3, height: 2, sideLength: 5, result: 75.0
 
 let cone1 = cone(radius: 3, height: 2, sideLength: 5)
 
 print(cone1.totalSurfaceArea)
+
+// Test case #2 - radius: 3, height: 2, sideLength: 5, result: 19.0
+
+let cone2 = cone(radius: 3, height: 2, sideLength: 5)
+
+print(cone2.volume)
+
+// Test case #3 - radius: 3, height: 2, sideLenght: 5, result: The surface area of the cone is 75.0 square units and its volume is 19.0 cubic units
+
+let cone3 = cone(radius: 3, height: 2, sideLength: 5)
+
+print(cone3.description)
 
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
